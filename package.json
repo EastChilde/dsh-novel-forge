@@ -1,0 +1,64 @@
+{
+  "name": "dsh-novel-forge",
+  "version": "0.1.0",
+  "description": "墨匣 · 从想法到长篇网文：设定、卷纲、细纲、正文、追踪与质量闸门。",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./client": "./src/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test test/"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "*",
+    "@deepseek-ai/dsh-tools": "*",
+    "@deepseek-ai/schemastery": "*"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/cordis": {
+      "optional": true
+    },
+    "@deepseek-ai/dsh-tools": {
+      "optional": true
+    },
+    "@deepseek-ai/schemastery": {
+      "optional": true
+    }
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "novel",
+    "writing"
+  ],
+  "license": "MIT",
+  "author": "EastChilde",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EastChilde/dsh-novel-forge.git"
+  },
+  "homepage": "https://github.com/EastChilde/dsh-novel-forge#readme",
+  "bugs": {
+    "url": "https://github.com/EastChilde/dsh-novel-forge/issues"
+  }
+}

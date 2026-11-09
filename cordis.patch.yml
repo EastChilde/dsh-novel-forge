@@ -1,0 +1,10 @@
+# 墨匣（dsh-novel-forge）bundle patch
+#
+# 安装后由 dsh 的 bundle 机制挂载；id 是配置树里的稳定身份，name 必须是可解析的包名。
+- insert:
+    - id: novel-forge
+      name: dsh-novel-forge
+      config:
+        booksRoot: books
+        defaultTargetWords: 2500
+        wordTolerance: 0.15

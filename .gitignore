@@ -1,0 +1,11 @@
+node_modules/
+.DS_Store
+*.log
+
+# 小说内容属于个人创作，不进插件仓库
+books/
+.trash/
+
+# 本地缓存
+.novel/
+.cache/
